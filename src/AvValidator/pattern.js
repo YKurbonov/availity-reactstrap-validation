@@ -14,7 +14,10 @@ function asRegExp(pattern) {
   if (match) {
     return new RegExp(match[1], match[2]);
   }
-
+  var notmatch = pattern.match(REGEX);
+  if (notmatch) {
+    return new RegExp(notmatch[1], notmatch[2]);
+  }
   return new RegExp(pattern);
 }
 
