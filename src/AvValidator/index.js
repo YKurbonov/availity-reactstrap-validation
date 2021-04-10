@@ -2,6 +2,7 @@ import date from './date';
 import dateRange from './dateRange';
 import email from './email';
 import match from './match';
+import notmatch from './notmatch';
 import max from './max';
 import maxlength from './maxlength';
 import maxchecked from './maxchecked';
@@ -22,6 +23,7 @@ export default {
   dateRange,
   email,
   match,
+  notmatch,
   max,
   maxlength,
   maxLength: maxlength,
